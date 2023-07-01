@@ -2,7 +2,7 @@
 let upperLib = "QWERTYUIOPASDFGHJKLZXCVBNM";
 let lowerLib = "qwertyuiopasdfghjklzxcvbnm";
 let numLib = "1234567890";
-let speLib = ' !"#$%&' + "()*+,-./:;<=>?@[\]^_`{|}~";
+let speLib = ' !"#$%&' + "()*+,-./:;<=>?@[]^_`{|}~" + "\\";
 
 function generatePassword() {
   let password = "";

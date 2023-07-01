@@ -6,6 +6,8 @@ This website was developed to help users create semi-customizeable secure passwo
 
 ![Screenshot of web application](Screenshot.png)
 
+[Link to application](https://leex3683.github.io/Password_Generator)
+
 ## Installation
 
 N/A
