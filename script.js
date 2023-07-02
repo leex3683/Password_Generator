@@ -7,11 +7,14 @@ let speLib = ' !"#$%&' + "()*+,-./:;<=>?@[]^_`{|}~" + "\\";
 function generatePassword() {
   let password = "";
   let passwordPool = "";
-  charnum = null;
   charnum = prompt("Enter Number of Characters 8 - 128");
   if (charnum == null) { return ""; };
   //If selected num is in range, create pool of num to draw from. Otherwise, line 37: alert user
   ////to select a num in range, and rerun function.
+  if((charnum - Math.floor(charnum)) !== (charnum - charnum)){
+    alert("Please choose an integer in the interval");
+    return generatePassword();
+  }
   if (charnum > 7 && charnum < 129) {
 
     let boolUpper = confirm("Do you want upper case characters? Choose 'ok' to include, or 'cancel' to exclude");
@@ -36,7 +39,7 @@ function generatePassword() {
     }
 
   } else {
-    alert("Please choose a number in the interval");
+    alert("Please choose an integer in the interval");
     return generatePassword();
     
   }
